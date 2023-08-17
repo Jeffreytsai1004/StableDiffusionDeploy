@@ -14,3 +14,9 @@
 @CALL set PYTHONDONTWRITEBYTECODE=1
 @CALL set COMMANDLINE_ARGS=--xformers --opt-sdp-attention --theme dark --api --autolaunch --listen --enable-insecure-extension-access
 ```
+1 安装`Git` 和`CUDA 118`
+2 解压脚本到具体的文件路径
+3 修改各个脚本中`VENV_NAME`和`WEUI_VERSION`变量,所有脚本保持一致
+4 运行deploy.bat
+5 运行launch.bat
+6 运行run.bat
