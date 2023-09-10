@@ -1,4 +1,6 @@
 @CALL echo off
+
+@CALL echo ---------------------------------------------------------------------------------------
 @CALL set WEUI_VERSION=v1.6.0
 @CALL set VENV_NAME=VENV_SD_WEUI_%WEUI_VERSION%_SDXL_001
 @CALL set PYTHON_VERISON=3.10.11
