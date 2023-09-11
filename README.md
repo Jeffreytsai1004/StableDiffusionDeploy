@@ -20,8 +20,6 @@
 
 3 修改各个脚本中`VENV_NAME`和`WEUI_VERSION`变量,所有脚本保持一致
 
-4 运行deploy.bat
+4 运行install.bat
 
-5 运行launch.bat
-
-6 运行run.bat
+5 运行run.bat
