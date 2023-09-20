@@ -3,17 +3,18 @@
 @CALL echo ---------------------------------------------------------------------------------------
 @CALL echo Setting VARIABLES
 @CALL set WEUI_VERSION=v1.6.0
-@CALL set VENV_NAME=VENV_SD_WEUI_%WEUI_VERSION%_001
+@CALL set VENV_NAME=VENV_SD_WEUI_%WEUI_VERSION%_aP5GXiY2Eg
 @CALL set PYTHON_VERISON=3.10.11
 @CALL set GIT_VERSION=2.41.0
 @CALL set GITLFS_VERSION=3.2.0
 @CALL set XFORMERS_VERSION=0.0.20
 @CALL set TORCH_VERSION=2.0.1+cu118
+@CALL set CLIP_CACHE=cache\clip
 @CALL set GDOWN_CACHE=cache\gdown
 @CALL set TORCH_HOME=cache\torch
 @CALL set HF_HOME=cache\huggingface
 @CALL set PYTHONDONTWRITEBYTECODE=1
-@CALL set COMMANDLINE_ARGS=--theme dark --xformers --opt-sdp-attention --api --autolaunch --listen --enable-insecure-extension-access
+@CALL set COMMANDLINE_ARGS=--theme dark --xformers --no-half --opt-sdp-attention --api --autolaunch --listen --enable-insecure-extension-access
 @CALL echo VARIABLES setted
 
 @CALL echo "-------------------------------------------------------------------------------------"
@@ -33,6 +34,7 @@
 @CALL echo   GITLFS_VERSION:               %GITLFS_VERSION%
 @CALL echo   XFORMERS_VERSION:             %XFORMERS_VERSION%
 @CALL echo   TORCH_VERSION:                %TORCH_VERSION%
+@CALL echo   CLIP_CACHE:                   %CLIP_CACHE%
 @CALL echo   GDOWN_CACHE:                  %GDOWN_CACHE%
 @CALL echo   HF_HOME:                      %HF_HOME%
 @CALL echo   PYTHONDONTWRITEBYTECODE:      %PYTHONDONTWRITEBYTECODE%
