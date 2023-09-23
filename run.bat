@@ -9,12 +9,12 @@
 @CALL set GITLFS_VERSION=3.2.0
 @CALL set XFORMERS_VERSION=0.0.20
 @CALL set TORCH_VERSION=2.0.1+cu118
-@CALL set CLIP_CACHE=cache\clip
-@CALL set GDOWN_CACHE=cache\gdown
-@CALL set TORCH_HOME=cache\torch
-@CALL set HF_HOME=cache\huggingface
+@CALL set CLIP_CACHE=E:\AI\StableDiffusion\Automatic\v1.6.0\cache\clip
+@CALL set GDOWN_CACHE=E:\AI\StableDiffusion\Automatic\v1.6.0\cache\gdown
+@CALL set TORCH_HOME=E:\AI\StableDiffusion\Automatic\v1.6.0\cache\torch
+@CALL set HF_HOME=E:\AI\StableDiffusion\Automatic\v1.6.0\cache\huggingface
 @CALL set PYTHONDONTWRITEBYTECODE=1
-@CALL set COMMANDLINE_ARGS=--theme dark --xformers --no-half --opt-sdp-attention --api --autolaunch --listen --enable-insecure-extension-access
+@CALL set COMMANDLINE_ARGS=--theme dark --xformers --opt-sdp-attention --autolaunch --listen --skip-install --skip-python-version-check
 @CALL echo VARIABLES setted
 
 @CALL echo "-------------------------------------------------------------------------------------"
