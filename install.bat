@@ -6,7 +6,7 @@
 @CALL set HF_HOME=cache\huggingface
 @CALL set PYTHONDONTWRITEBYTECODE=1
 @CALL pip install -r requirements.txt
-@CALL git clone -b v1.6 https://github.com/AUTOMATIC1111/stable-diffusion-webui/
+@CALL git clone -b v1.6.0 https://github.com/AUTOMATIC1111/stable-diffusion-webui/
 @CALL mkdir stable-diffusion-webui\cache\gdown\
 @CALL mkdir stable-diffusion-webui\cache\torch\
 @CALL mkdir stable-diffusion-webui\cache\huggingface\
