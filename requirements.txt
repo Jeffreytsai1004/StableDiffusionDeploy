@@ -1,6 +1,6 @@
 ﻿pip==23.3.1
-git==2.43.0
-gitlfs
+git
+git-lfs
 xformers==0.0.23
 pytorch
 torchvision
