@@ -1,4 +1,4 @@
-@CALL "%~dp0micromamba.exe" create -n stable-diffusion-webui-001 python==3.10.6 git==2.43.0 -c pytorch -c conda-forge -r "%~dp0\" -y
+@CALL "%~dp0micromamba.exe" create -n stable-diffusion-webui-001 python==3.10.6 git -c pytorch -c conda-forge -r "%~dp0\" -y
 @CALL "%~dp0micromamba.exe" shell init --shell cmd.exe --prefix "%~dp0\"
 @CALL condabin\micromamba.bat activate stable-diffusion-webui-001
 @CALL set GDOWN_CACHE=cache\gdown
