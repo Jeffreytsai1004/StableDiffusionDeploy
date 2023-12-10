@@ -17,6 +17,5 @@
 @CALL git clone https://github.com/crowsonkb/k-diffusion.git repositories\k-diffusion
 @CALL git clone https://github.com/sczhou/CodeFormer.git repositories\CodeFormer
 @CALL git clone http://github.com/salesforce/BLIP.git repositories\BLIP
-@CALL cd stable-diffusion-webui
 @CALL python -B launch.py --xformers
 @CALL PAUSE
