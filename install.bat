@@ -18,5 +18,5 @@
 @CALL git clone https://github.com/crowsonkb/k-diffusion.git repositories\k-diffusion
 @CALL git clone https://github.com/sczhou/CodeFormer.git repositories\CodeFormer
 @CALL git clone http://github.com/salesforce/BLIP.git repositories\BLIP
-@CALL python -B launch.py --xformers
+@CALL python -B launch.py --xformers --skip-torch-cuda-test
 @CALL PAUSE
