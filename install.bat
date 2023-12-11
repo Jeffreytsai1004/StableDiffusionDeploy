@@ -5,7 +5,8 @@
 @CALL set TORCH_HOME=cache\torch
 @CALL set HF_HOME=cache\huggingface
 @CALL set PYTHONDONTWRITEBYTECODE=1
-@CALL pip install xformer==0.0.20 torch==2.0.1+cu118 torchvision torchaudio torchtext PySoundFile
+@CALL pip install xformer==0.0.20
+@CALL pip install torch torchvision torchaudio torchtext PySoundFile --index-url https://download.pytorch.org/whl/cu118
 @CALL pip install -r requirements.txt
 @CALL git clone -b v1.7.0-RC https://github.com/AUTOMATIC1111/stable-diffusion-webui/
 @CALL mkdir stable-diffusion-webui\cache\gdown\
@@ -18,5 +19,5 @@
 @CALL git clone https://github.com/crowsonkb/k-diffusion.git repositories\k-diffusion
 @CALL git clone https://github.com/sczhou/CodeFormer.git repositories\CodeFormer
 @CALL git clone http://github.com/salesforce/BLIP.git repositories\BLIP
-@CALL python -B launch.py --xformers --skip-torch-cuda-test
+@CALL python -B launch.py --xformers --opt-sdp-attention --skip-torch-cuda-test
 @CALL PAUSE
