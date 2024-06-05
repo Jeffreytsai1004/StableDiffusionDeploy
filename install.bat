@@ -10,7 +10,7 @@ CALL "%~dp0micromamba.exe" create -n StableDiffusion_001 python==3.10.14 git==2.
 @CALL git clone https://github.com/facebookresearch/xformers.git
 @CALL cd xformers
 @CALL git submodule update --init --recursive
-@CALL pip install -e .
+@CALL pip install .
 @CALL cd ..
 @CALL git clone https://github.com/NVlabs/nvdiffrast .\nvdiffrast
 @CALL cd nvdiffrast
