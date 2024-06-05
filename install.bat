@@ -1,6 +1,11 @@
-@CALL "%~dp0micromamba.exe" create -n StableDiffusion_001 python==3.10.14 git==2.41.0 git-lfs==3.2.0 -c pytorch -c conda-forge -r "%~dp0\" -y
+CALL "%~dp0micromamba.exe" create -n StableDiffusion_001 python==3.10.14 git==2.41.0 git-lfs==3.2.0 -c pytorch -c conda-forge -r "%~dp0\" -y
 @CALL "%~dp0micromamba.exe" shell init --shell cmd.exe --prefix "%~dp0\"
 @CALL condabin\micromamba.bat activate StableDiffusion_001
+@CALL set GDOWN_CACHE=cache\gdown
+@CALL set TORCH_HOME=cache\torch
+@CALL set HF_HOME=cache\huggingface
+@CALL set PYTHONDONTWRITEBYTECODE=1
+@CALL set CUDA_HOME=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1
 @CALL pip install --force-reinstall torch==2.2.0+cu121 torchvision==0.17.0+cu121 torchaudio==2.2.0+cu121 --index-url https://download.pytorch.org/whl/cu121 --no-cache-dir
 @CALL git clone https://github.com/facebookresearch/xformers.git
 @CALL cd xformers
@@ -11,10 +16,6 @@
 @CALL cd nvdiffrast
 @CALL pip install .
 @CALL cd ..
-@CALL set GDOWN_CACHE=cache\gdown
-@CALL set TORCH_HOME=cache\torch
-@CALL set HF_HOME=cache\huggingface
-@CALL set PYTHONDONTWRITEBYTECODE=1
 @CALL git clone -b v1.9.4 https://github.com/AUTOMATIC1111/stable-diffusion-webui/ .\stable-diffusion-webui\
 @CALL mkdir .\stable-diffusion-webui\cache\gdown\
 @CALL mkdir .\stable-diffusion-webui\cache\torch\
